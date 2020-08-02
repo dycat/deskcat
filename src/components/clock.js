@@ -15,12 +15,12 @@ function formattedTime(showSeconds = false) {
 }
 
 function Clock() {
-  let now = formattedTime();
+  let now = formattedTime(true);
   let [time, setTime] = useState(now);
 
   useEffect(() => {
     const updateTime = setTimeout(() => {
-      let now = formattedTime();
+      let now = formattedTime(true);
       setTime(now);
     }, 1000);
     return () => {
