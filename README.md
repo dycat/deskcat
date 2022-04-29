@@ -1,8 +1,8 @@
 The goal of the project include:
 
-- provide some configuration to customize
-- show more than just random words
-- become progressive App
+- TODO: provide some configuration to customize 
+- TODO: show more than just random words
+- TODO: become progressive App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
