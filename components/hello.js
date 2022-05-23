@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { createUseStyles } from "react-jss";
-import { randomItem } from "../utls";
+import { randomItem } from "./utls";
 
 const useStyles = createUseStyles({
   words: {

@@ -1,7 +1,7 @@
 import React from "react";
-import "./App.css";
-import Clock from "./components/clock";
-import Hello from "./components/hello";
+// import "./App.css";
+import Clock from "../components/clock";
+import Hello from "../components/hello";
 
 import { createUseStyles } from "react-jss";
 

@@ -8,4 +8,4 @@ function randomItem(array) {
   let max = array.length;
   return array[getRandomInt(0, max)];
 }
-export { randomItem };
+module.exports = { randomItem };
