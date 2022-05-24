@@ -25,7 +25,7 @@ function Clock() {
     return () => {
       clearTimeout(updateTime);
     };
-  }, [time]);
+  }, []);
 
   return <div className="clock">{formattedTime(time)}</div>;
 }
