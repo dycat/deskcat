@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../static/css/clock.css";
+// import "../static/css/clock.css";
 
 function formattedTime(now, showSeconds = false) {
   let hours = now.getHours() >= 10 ? now.getHours() : "0" + now.getHours();
@@ -25,7 +25,7 @@ function Clock() {
     return () => {
       clearTimeout(updateTime);
     };
-  }, [time]);
+  }, []);
 
   return <div className="clock">{formattedTime(time)}</div>;
 }

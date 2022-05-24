@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { createUseStyles } from "react-jss";
-import { randomItem } from "../utls";
+import { randomItem } from "./utls";
 
 const useStyles = createUseStyles({
   words: {
@@ -21,10 +21,13 @@ function Hello() {
     "😆",
     "💩",
   ];
-  const [helloword, setHelloWord] = useState(randomItem(hellowords));
+  const [helloword, setHelloWord] = useState("");
+  useEffect(() => {
+    setHelloWord(randomItem(hellowords)) 
+  }, [])
 
-  const style = useStyles();
-  return <div className={style.words}>{helloword}</div>;
+  // const style = useStyles();
+  return <div className="text-4xl">{helloword}</div>;
 }
 
 export default Hello;

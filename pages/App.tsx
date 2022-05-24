@@ -1,7 +1,6 @@
 import React from "react";
-import "./App.css";
-import Clock from "./components/clock";
-import Hello from "./components/hello";
+import Clock from "../components/clock";
+import Hello from "../components/hello";
 
 import { createUseStyles } from "react-jss";
 
@@ -30,9 +29,9 @@ const useStyles = createUseStyles({
 });
 
 function App() {
-  const style = useStyles();
+  // const style = useStyles();
   return (
-    <div className={style.themes}>
+    <div>
       <Clock></Clock>
       <Hello></Hello>
     </div>
