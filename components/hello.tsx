@@ -27,7 +27,11 @@ function Hello() {
   }, [])
 
   // const style = useStyles();
-  return <div className="text-4xl">{helloword}</div>;
+  return (
+      <div className="">
+        <p className="text-center text-4xl text-amber-500">{helloword}</p>
+      </div>
+  )
 }
 
 export default Hello;

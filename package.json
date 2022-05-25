@@ -5,8 +5,7 @@
   "dependencies": {
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest",
-    "react-jss": "^10.3.0"
+    "react-dom": "latest"
   },
   "scripts": {
     "dev": "next dev",

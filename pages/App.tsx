@@ -2,7 +2,7 @@ import React from "react";
 import Clock from "../components/clock";
 import Hello from "../components/hello";
 
-import { createUseStyles } from "react-jss";
+// import { createUseStyles } from "react-jss";
 
 const backgroundColor = ["#011627", "#2EC4B6", "#E71D36", "#FF9F1C", "#2a9d8f"];
 
@@ -17,21 +17,21 @@ function randomItem(array) {
   return array[getRandomInt(0, max)];
 }
 
-const useStyles = createUseStyles({
-  themes: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-    height: "100vh",
-    backgroundColor: randomItem(backgroundColor),
-  },
-});
+// const useStyles = createUseStyles({
+//   themes: {
+//     display: "flex",
+//     flexDirection: "column",
+//     alignItems: "center",
+//     justifyContent: "center",
+//     height: "100vh",
+//     backgroundColor: randomItem(backgroundColor),
+//   },
+// });
 
 function App() {
   // const style = useStyles();
   return (
-    <div>
+    <div className="flex h-screen bg-blue-900">
       <Clock></Clock>
       <Hello></Hello>
     </div>
