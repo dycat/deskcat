@@ -31,7 +31,7 @@ function randomItem(array) {
 function App() {
   // const style = useStyles();
   return (
-    <div className="flex h-screen bg-blue-900">
+    <div className="flex flex-col justify-center h-screen bg-blue-900">
       <Clock></Clock>
       <Hello></Hello>
     </div>
