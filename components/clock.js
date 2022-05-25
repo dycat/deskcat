@@ -27,7 +27,7 @@ function Clock() {
     };
   }, [time]);
 
-  return <div className="clock">{formattedTime(time)}</div>;
+  return <div className="text-center text-slate-100 text-6xl mb-2">{formattedTime(time)}</div>;
 }
 
 export default Clock;
