@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { createUseStyles } from "react-jss";
 import { randomItem } from "./utls";
 
-const useStyles = createUseStyles({
-  words: {
-    color: "#fdfffc",
-    fontSize: "2em",
-  },
-});
+// const useStyles = createUseStyles({
+//   words: {
+//     color: "#fdfffc",
+//     fontSize: "2em",
+//   },
+// });
 
 function Hello() {
   const hellowords = [
