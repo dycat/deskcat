@@ -44,7 +44,7 @@ function App() {
           <Image src={settingicon} width="24" height='24' />
         </button>
       </div>
-        <div className={`bg-slate-50/80 grid justify-center absolute bottom-0 left-0 h-screen w-screen ${configureOpaque}`}>
+        <div id="configure_id" className={`bg-slate-50/80 grid justify-center absolute bottom-0 left-0 h-screen w-screen ${configureOpaque}`}>
           <button onClick={showConfigure}>Close</button>
           <Setting backgroundColorList={backgroundColorList} 
                     backgroundColor = {backgroundColor}
