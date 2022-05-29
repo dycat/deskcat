@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 // import "../static/css/clock.css";
 
 function formattedTime(now, showSeconds = false) {
+  
   let hours = now.getHours() >= 10 ? now.getHours() : "0" + now.getHours();
   let minutes =
     now.getMinutes() >= 10 ? now.getMinutes() : "0" + now.getMinutes();

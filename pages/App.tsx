@@ -3,8 +3,10 @@ import Clock from "../components/clock";
 import Hello from "../components/hello";
 import Image from "next/image";
 import settingicon from "../public/settings.png";
+import Setting from "../components/setting";
 
-const backgroundColor = ["#011627", "#2EC4B6", "#E71D36", "#FF9F1C", "#2a9d8f"];
+const backgroundColorList = ["bg-blue-900", "bg-current", "bg-slate-800", "bg-zinc-800", "bg-orange-600",
+                             "bg-amber-400", "bg-yellow-400", "bg-lime-600", "bg-green-500"];
 
 function getRandomInt(min, max) {
   min = Math.ceil(min);
@@ -18,7 +20,10 @@ function randomItem(array) {
 }
 
 function App() {
+
   const [configureOpaque, setConfigureOpaque] = useState('invisible')
+  const [backgroundColor, setBackgroundColor] = useState('bg-blue-900')
+
   const showConfigure = () => {
     if (configureOpaque == 'invisible') {
       setConfigureOpaque('visible')
@@ -28,7 +33,7 @@ function App() {
   }
 
   return (
-    <div className="grid justify-center h-screen w-screen bg-blue-900 grid-rows-2 items-end">
+    <div className={`${backgroundColor} grid justify-center h-screen w-screen grid-rows-2 items-end`}>
       <div className="w-screen">
       <Clock></Clock>
       <Hello></Hello>
@@ -39,14 +44,11 @@ function App() {
           <Image src={settingicon} width="24" height='24' />
         </button>
       </div>
-        <div className={`bg-slate-50/75 grid justify-center absolute bottom-0 left-0 h-screen w-screen ${configureOpaque}`}>
+        <div className={`bg-slate-50/80 grid justify-center absolute bottom-0 left-0 h-screen w-screen ${configureOpaque}`}>
           <button onClick={showConfigure}>Close</button>
-          <div>
-            <h3>Background Color</h3>
-            <ul>
-              { backgroundColor.map((color: string) => <li>{color}</li> ) }
-            </ul>
-          </div>
+          <Setting backgroundColorList={backgroundColorList} 
+                    backgroundColor = {backgroundColor}
+                    setBackgroundColor={setBackgroundColor}></Setting>
       </div>
     </div>
   );
