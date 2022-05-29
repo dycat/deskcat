@@ -28,22 +28,25 @@ function App() {
   }
 
   return (
-    <div className="flex flex-col justify-center h-screen bg-blue-900">
+    <div className="grid justify-center h-screen w-screen bg-blue-900 grid-rows-2 items-end">
+      <div className="w-screen">
       <Clock></Clock>
       <Hello></Hello>
-      <div>
-        <button id="configure_id" onClick={showConfigure}>
-          <Image src={settingicon} width="32" height='32' />
+      </div>
+      
+      <div className="w-screen px-4 py-4">
+      <button id="configure_id" onClick={showConfigure} className="">
+          <Image src={settingicon} width="24" height='24' />
         </button>
-        <div className={`bg-slate-50/75 absolute bottom-0 left-0 h-screen w-screen ${configureOpaque}`}>
+      </div>
+        <div className={`bg-slate-50/75 grid justify-center absolute bottom-0 left-0 h-screen w-screen ${configureOpaque}`}>
+          <button onClick={showConfigure}>Close</button>
           <div>
-            <button onClick={showConfigure}>Close</button>
+            <h3>Background Color</h3>
             <ul>
               { backgroundColor.map((color: string) => <li>{color}</li> ) }
             </ul>
           </div>
-        </div>
-
       </div>
     </div>
   );
