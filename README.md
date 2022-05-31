@@ -13,4 +13,4 @@ The goal of the project include:
 
 [] TODO: quote
 
-[] TODO: become progressive App
+[x] TODO: become progressive App
