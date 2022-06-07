@@ -7,16 +7,17 @@ function Setting({backgroundColorList, backgroundColor ,setBackgroundColor}) {
     return (
         <form>
             <h3 className="font-bold font-sans text-lg">Background Color</h3>
-            <div>
+            <ul>
               {backgroundColorList.map((color: string) => 
-                <li className="list-none"><input type="radio" 
+                <li className="list-none" key={color}><input type="radio" 
                                                  name="background"  
                                                  value={color}
+                                                 
                                                  checked={color == backgroundColor}
                                                  onChange={handleChangeBGColor}>
                                           </input> {color}</li> 
               )}
-            </div>
+            </ul>
           </form>
     )
 }
