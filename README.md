@@ -1,11 +1,13 @@
 # Deskcat 
-Company at your browser. 
+**Web Wallpaper** accompany at your browser. 
 
 The goal of the project include:
 
 [x] Show Time and emojs
 
-[x] TODO: customize backgroundcolor
+[x] Customize backgroundcolor
+
+[x] Install as PWA
 
 [] TODO: Persistance
 
@@ -13,4 +15,6 @@ The goal of the project include:
 
 [] TODO: quote
 
-[x] TODO: become progressive App
+[] TODO: New Icon
+
+Visit https://deskcat.vercel.app/ to use.
