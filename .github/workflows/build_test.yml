@@ -3,12 +3,11 @@
 
 name: Build and test
 
-on: 
+on:
   push:
-    branches:
-     - master
+    branches: [ $default-branch ]
   pull_request:
-    - master
+    branches: [ $default-branch ]
 
 jobs:
   build:
