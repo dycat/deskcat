@@ -18,10 +18,10 @@ function MyApp({Component, pageProps }: AppProps) {
 
                 <link rel="manifest" href="/manifest.json" />
                 <link
-                href="/logo192.png"
+                href="/logo256.png"
                 rel="icon"
                 type="image/png"
-                sizes="192x192"
+                sizes="256x256"
                 />
                 <link
                 href="/logo512.png"
@@ -30,6 +30,7 @@ function MyApp({Component, pageProps }: AppProps) {
                 sizes="512x512"
                 />
                 <link rel="apple-touch-icon" href="/apple-icon.png"></link>
+                <link rel="shortcut icon" href="/favicon.ico" />
                 <meta name="theme-color" content="#317EFB" />
 
             </Head>
