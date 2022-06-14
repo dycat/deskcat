@@ -4,9 +4,8 @@ import Hello from "../components/hello";
 import Image from "next/image";
 import settingicon from "../public/settings.png";
 import Setting from "../components/setting";
+import {BackgroundColor, backgroundColorList} from "../components/backgroundColor";
 
-const backgroundColorList = ["bg-blue-900", "bg-current", "bg-slate-800", "bg-zinc-800", "bg-orange-600",
-                             "bg-amber-400", "bg-yellow-400", "bg-lime-600", "bg-green-500"];
 
 function getRandomInt(min, max) {
   min = Math.ceil(min);
@@ -22,7 +21,7 @@ function randomItem(array) {
 function App() {
 
   const [configureOpaque, setConfigureOpaque] = useState('invisible')
-  const [backgroundColor, setBackgroundColor] = useState('bg-blue-900')
+  const [backgroundColor, setBackgroundColor] = useState<BackgroundColor>({id: 1, display_name: "blue", value: "bg-blue-900"})
 
   const showConfigure = () => {
     if (configureOpaque == 'invisible') {
