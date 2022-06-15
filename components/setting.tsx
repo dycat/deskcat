@@ -1,7 +1,13 @@
 
 import { BackgroundColor } from "../components/backgroundColor";
 
-function Setting(backgroundColorList: BackgroundColor[], backgroundColor: BackgroundColor , setBackgroundColor: Function) {
+type AppProps = {
+  backgroundColorList: BackgroundColor[];
+  currentBackgroundColor: BackgroundColor;
+  setBackgroundColor: Function
+}
+
+function Setting({backgroundColorList, currentBackgroundColor , setBackgroundColor}: AppProps) {
 
     const handleChangeBGColor = (event) => {
         setBackgroundColor(event.target.value)
@@ -15,7 +21,7 @@ function Setting(backgroundColorList: BackgroundColor[], backgroundColor: Backgr
                                                  name="background"  
                                                  value={color.value}
                                                  
-                                                 checked={color == backgroundColor}
+                                                 checked={color == currentBackgroundColor}
                                                  onChange={handleChangeBGColor}>
                                           </input> {color.display_name}</li> 
               )}

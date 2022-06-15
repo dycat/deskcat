@@ -32,7 +32,7 @@ function App() {
   }
 
   return (
-    <div className={`${backgroundColor} grid justify-center h-screen w-screen grid-rows-2 items-end`}>
+    <div className={`${backgroundColor.value} grid justify-center h-screen w-screen grid-rows-2 items-end`}>
       <div className="w-screen">
       <Clock></Clock>
       <Hello></Hello>
@@ -45,8 +45,8 @@ function App() {
       </div>
         <div id="configure_id" className={`bg-slate-50/80 grid justify-center absolute bottom-0 left-0 h-screen w-screen ${configureOpaque}`}>
           <button onClick={showConfigure}>Close</button>
-          <Setting backgroundColorList={backgroundColorList} 
-                    backgroundColor = {backgroundColor}
+          <Setting backgroundColorList={[...backgroundColorList]} 
+                    currentBackgroundColor = {backgroundColor}
                     setBackgroundColor={setBackgroundColor}></Setting>
       </div>
     </div>
