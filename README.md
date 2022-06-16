@@ -1,5 +1,5 @@
 # Deskcat 
-**Web Wallpaper** accompany at your browser. 
+**Web Wallpaper** accompany at your browser. It could be install as pwa and provide simple customization.
 
 The goal of the project include:
 
@@ -15,6 +15,6 @@ The goal of the project include:
 
 [] TODO: quote
 
-[] TODO: New Icon
+[x] TODO: New Icon
 
 Visit https://deskcat.vercel.app/ to use.
